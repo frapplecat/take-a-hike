@@ -8,7 +8,7 @@ from .forms import CommentForm
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
+    template_name = 'blog.html'
     paginate_by = 6
 
 
@@ -76,3 +76,21 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class ContactMe(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, "./contact-me.html")
+
+
+class LetsWalk(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, "./book-a-walk.html")
+
+
+class Home(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, "./index.html")
