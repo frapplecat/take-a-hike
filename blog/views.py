@@ -84,10 +84,10 @@ class ContactMe(View):
         return render(request, "./contact-me.html")
 
 
-class LetsWalk(View):
+class AboutMe(View):
 
     def get(self, request, *args, **kwargs):
-        return render(request, "./book-a-walk.html")
+        return render(request, "./about-me.html")
 
 
 class Home(View):
