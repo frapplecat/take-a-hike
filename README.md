@@ -1,108 +1,311 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![take a hike](readme-images/#)
 
-Welcome frapplecat,
+<br>
+<br>
+<br>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+**TABLE OF CONTENTS**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<br>
+<br>
+<br>
 
-## Gitpod Reminders
+# **ABOUT Take a Hike**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+XXXXXX **[here](https://#.herokuapp.com/)**.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+<br>
+<br>
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+# **LOGIC CHART**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![take a hike database schema](#.png)
 
-A blue button should appear to click: _Make Public_,
+<br>
+<br>
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+# **AGILE PLANNING**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**USER STORIES**
 
-To log into the Heroku toolbelt CLI:
+**TASKS**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+**MILESTONES**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# **THE STRATEGY PLANE**
 
-------
+**Visitor Goals**
 
-## Release History
+* XXX
+* XXX
+* XXX
+* XXX
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**Targeted Users**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+**Project Goals**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# **THE SKELETON PLANE**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+**Wireframes**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Desktop**
+![take a hike desktop1](readme-images/takeahike-desktop-wireframe1.png)
+![take a hike desktop2](readme-images/takeahike-desktop-wireframe2.png)
+![take a hike desktop3](readme-images/takeahike-desktop-wireframe3.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Mobile**
+![take a hike mobile](readme-images/takeahike-mobile-wireframe.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# **THE SCOPE PLANE**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# **THE STRUCTURE PLANE**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**Features**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+**Homepage**
+![take a hike homepage](readme-images/#.png)
+**About Me**
+**Blog**
+**Contact Me**
+**Register**
+**Login**
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# **THE SURFACE PLANE**
+**Colour Scheme**
+**Typography**
+**Images**
 
-------
+<br>
+<br>
+<br>
 
-## FAQ about the uptime script
+# **FUTURE FEATURES**
 
-**Why have you added this script?**
+* XXX
+* XXX
+* XXX
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<br>
+<br>
+<br>
 
-**How will this affect me?**
+# **TECHNOLOGIES**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+**Languages Used**
+* Python
+* Markdown
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+**Libraries and Frameworks**
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+**Tools and Resources**
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+<br>
+<br>
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+# **RESOURCES**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* **Gitpod** - to create the website and version control
+* **Github** - to save and store the files for the website
+* **Adobe Illustrator** - to create the logo and various headings
+* **Texteditor.com** - for ASCII text art
+* **CI Python Linter** - to test Python code
+* **Slack, Stackoverflow, Youtube, Google, W3C Schools** - for help with troubleshooting errors
+* **Freeconvert.com** - to compress mp4
+* **Ezgif.com**- to convert compressed mp4 to gif for README
+* **Record It Pro** - for screen-capturing video and converting mp4 to gif
+* **GitHub Wiki TOC generator** - for generating README Table of Contents
 
-**Anything more?**
+<br>
+<br>
+<br>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+# **MANUAL TESTING**
+XXXXX
+![XXX](#.png)<br>
+
+<br>
+
+|**FEATURE**|**EXPECTED**|**ACTION**|**RESULT**|**SCREENSHOT**|
+|:---|:---|:---|:---|:---|
+| Intro | To display on load | Run game | As expected | ![Intro](readme-images/pyfunhangman-intro-crop.png)
+| Enter Name | To appear underneath title | Input alphanumeric name, hit enter | As expected | ![Enter Name](readme-images/pyfunhangman-enter-name-crop.png)
+
+
+<br>
+<br>
+<br>
+
+# **VALIDATION**
+**CI Python Linter**
+
+![CI Python Linter validation1](readme-images/pyfun-hangman-ci-python-linter1.png)
+![CI Python Linter validation2](readme-images/pyfun-hangman-ci-python-linter2.png)
+
+<br>
+<br>
+<br>
+
+# **BUGS**
+
+* **Expected** - xxx
+* **Testing** - I ran the site using terminal. 
+* **Result** - xxx
+* **Fix** - xxx
 
 ---
 
-Happy coding!
+* **Expected** - xxx
+* **Testing** - I ran the site using terminal. 
+* **Result** - xxx
+* **Fix** - xxx
+
+---
+
+
+<br>
+<br>
+<br>
+
+# **KNOWN ISSUES**
+No known issues
+<br>
+<br>
+<br>
+
+# **DEPLOYMENT**
+
+![deployment gif1](readme-images/#.gif)
+![deployment gif2](readme-images/#.gif)
+![deployment gif3](readme-images/#.gif)
+
+* The site was deployed on Heroku<br>
+
+* Open Heroku account.
+* From the Heroku dashboard click the “Create new app” button.
+* Name the app, the name has to be unique.
+* Select region and click “Create app”. 
+* Click on the settings tab.  
+* Click “Add buildpack” here.
+* Select Python then click “Save changes”.
+* Select node.js and click “Save” again.
+* Buildpacks must be in this order, with Python on top and node.js underneath.
+* Go to the deploy section.  
+* Select Github and confirm that we want to connect to Github.  
+* Search for the Github repository name and once found click “connect”  
+* Choose to manually deploy using the deploy branch option.  
+* After creation you get an “App was successfully deployed” message  
+with a button to take us to our deployed link. 
+
+
+<br>
+<br>
+<br>
+
+# **HOW TO FORK**
+
+* Login/signup to GitHub.
+
+![how to fork 1](readme-images/#.png)
+![how to fork 2](readme-images/#.png)
+
+<br>
+<br>
+
+* Locate the relevant repository, for example: https://github.com/frapplecat/
+
+![how to fork 3](#.png)
+
+<br>
+<br>
+
+
+* Click on the 'Fork' button in the top right corner.
+
+![how to fork 4](readme-images/#.png)
+
+<br>
+<br>
+
+
+* The forked version of this repo will be generated.
+
+
+
+<br>
+<br>
+<br>
+
+# **HOW TO CLONE**
+
+* On GitHub.com, navigate to the main page of the repository.
+![how to clone 1](readme-images/#clone1.png)
+
+<br>
+<br>
+
+
+* Above the list of files, click Code.
+![how to clone 2](readme-images/#2.png)
+
+<br>
+<br>
+
+
+* Copy the URL for the repository.
+![how to clone 3](readme-images/#3.png)
+
+<br>
+<br>
+
+
+* Open Terminal.
+![how to clone 4](readme-images/#4.png)
+
+<br>
+<br>
+
+
+* Change the current working directory to the location where you want the cloned directory.
+* Type git clone, and then paste the URL you copied earlier.
+![how to clone 5](readme-images/#5.png)
+
+<br>
+<br>
+
+
+* Press Enter to create your local clone.
+
+<br>
+<br>
+<br>
+
+# **VERSION CONTROL**
+
+I used GITPOD for version control software. Regular git add ., git commit -m, and git push were used to add, save and push the code to the GITHUB Repo where the source code is stored.
+
+<br>
+<br>
+<br>
+
+# **CREDITS**
+
+* I watched many youtube tutorials on... but in particular **[#](https://www.#)**
+
+<br>
+<br>
+<br>
+
+# **ACKNOWLEDGEMENTS**
+
+* Thanks as always to my Code Institute Mentor, Mitko Backvarov, for his support, advice and encouragement.
