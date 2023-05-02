@@ -25,6 +25,10 @@ body {
     background-color: #445261;
 }
 
+.bg-dark {
+    background-color: #01310f !important;
+}
+
 .main-bg {
     background-color: #F9FAFC;
 }
@@ -144,3 +148,16 @@ body {
 i:hover {
     color: #445261;
 }
+
+.jumbotron {
+    background: url(https://res.cloudinary.com/dik6gpx6a/image/upload/v1682792145/take-a-hike-homepage-trekking-299000_bovxac.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 1100px;
+    width: 100%;
+  }
+
+  .takeahikegreen {
+    background-color: #01310f;
+  }
