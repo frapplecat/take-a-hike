@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 bg-dark">
+<body class="d-flex flex-column h-100">
 
     <!-- Navigation -->
 
@@ -48,6 +48,9 @@
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'profile' %}">Profile</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
@@ -85,7 +88,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 takeahikegreen">
+    <footer class="footer mt-auto py-3 bg-dark">
         <p class="m-0 text-center text-light">
             <i class="fab fa-facebook-square ms-3 fa-lg"></i>
             <i class="fab fa-twitter-square ms-3 fa-lg"></i>

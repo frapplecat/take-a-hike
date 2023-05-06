@@ -2,7 +2,20 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, UserUpdateForm, ProfileUpdateForm
+
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
+from django.contrib import messages
+from django.views.generic.edit import FormView
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login 
+from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+from django.shortcuts import render, redirect
+from django.views import View
 
 
 class PostList(generic.ListView):
@@ -94,3 +107,49 @@ class Home(View):
 
     def get(self, request, *args, **kwargs):
         return render(request, "./index.html")
+
+
+# class Profile(View):
+
+#     def get(self, request, *args, **kwargs):
+#         return render(request, "./profile.html")
+
+
+class Profile(LoginRequiredMixin, View):
+    def get(self, request):
+        user_form = UserUpdateForm(instance=request.user)
+        profile_form = ProfileUpdateForm(instance=request.user.profile)
+        
+        context = {
+            'user_form': user_form,
+            'profile_form': profile_form
+        }
+        
+        return render(request, './profile.html', context)
+
+    def post(self,request):
+        user_form = UserUpdateForm(
+            request.POST,
+            instance=request.user
+        )
+        profile_form = ProfileUpdateForm(
+            request.POST,
+            request.FILES,
+            instance=request.user.profile
+        )
+
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+
+            messages.success(request,'Your profile has been updated successfully')
+
+            return redirect('profile')
+        else:
+            context = {
+                'user_form': user_form,
+                'profile_form': profile_form
+            }
+            messages.error(request,'Error updating you profile')
+            
+            return render(request, './profile.html', context)
