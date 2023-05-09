@@ -7,9 +7,12 @@
 	<form method="POST" enctype="multipart/form-data" class="card">
 		{% csrf_token %} 
 		
-	    {% if user.profile %}
-			<img src="{{user.profile.avatar.url}}" alt="{{ user.username }}" class="avatar"  accept=".jpg,.jpeg,.png"/>
+		{% if "avatar" in user.profile.avatar.url %}
+		<img src="https://res.cloudinary.com/dik6gpx6a/image/upload/v1683464634/take-a-hike-blog-placeholder_rh7vsl.webp" class="avatar img-fluid">
+		{% else %}
+		<img src="{{ user.profile.avatar.url }}" alt="{{ user.username }}" class="avatar img-fluid"  accept=".jpg,.jpeg,.png"/>
 	    {% endif %}
+	    
 	    
 	    <h2 class="text-center">{{ user.username | title }}</h2>
 	    <p class="text-center"><a href="mailto:{{user.email}}">{{user.email}}</a></p>

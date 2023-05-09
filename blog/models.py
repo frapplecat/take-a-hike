@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.db.models.signals import post_save
+from django.contrib.auth.models import User
+from django.dispatch import receiver
 from PIL import Image
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -58,11 +61,22 @@ class Profile(models.Model):
         # save the profile first
         super().save(*args, **kwargs)
 
-        # resize the image
-        img = Image.open(self.avatar.path)
-        if img.height > 300 or img.width > 300:
-            output_size = (300, 300)
-            # create a thumbnail
-            img.thumbnail(output_size)
-            # overwrite the larger image
-            img.save(self.avatar.path)
+        # # resize the image
+        # img = Image.open(self.avatar.path)
+        # if img.height > 300 or img.width > 300:
+        #     output_size = (300, 300)
+        #     # create a thumbnail
+        #     img.thumbnail(output_size)
+        #     # overwrite the larger image
+        #     img.save(self.avatar.path)
+
+
+@receiver(post_save, sender=User)
+def create_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_profile(sender, instance, **kwargs):
+    instance.profile.save()

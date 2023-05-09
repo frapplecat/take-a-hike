@@ -145,6 +145,13 @@ body {
     border: none;
 }
 
+.btn-group-lg > .btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    margin-top: 15px;
+}
+
 i:hover {
     color: #445261;
 }
@@ -171,4 +178,12 @@ i:hover {
 
   .takeahikegreen {
     background-color: #01310f;
+  }
+
+  .avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    margin-top: 25px;
   }

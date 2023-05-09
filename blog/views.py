@@ -127,7 +127,7 @@ class Profile(LoginRequiredMixin, View):
         
         return render(request, './profile.html', context)
 
-    def post(self,request):
+    def post(self, request):
         user_form = UserUpdateForm(
             request.POST,
             instance=request.user
@@ -142,7 +142,7 @@ class Profile(LoginRequiredMixin, View):
             user_form.save()
             profile_form.save()
 
-            messages.success(request,'Your profile has been updated successfully')
+            messages.success(request, 'Your profile has been updated successfully')
 
             return redirect('profile')
         else:
@@ -150,6 +150,6 @@ class Profile(LoginRequiredMixin, View):
                 'user_form': user_form,
                 'profile_form': profile_form
             }
-            messages.error(request,'Error updating you profile')
+            messages.error(request, 'Error updating you profile')
             
             return render(request, './profile.html', context)
